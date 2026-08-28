@@ -34,9 +34,10 @@ getquote();
 
 function message() {
     const text = `"${quote.innerText}" — ${author.innerText}`;
+    const phoneNumber = "9657373987";
 
     const whatsappUrl =
-        "https://wa.me/?text=" + encodeURIComponent(text);
+        "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(text);
 
     window.open(whatsappUrl, "_blank", "Message Window", "width=600", "height=200");
 }
