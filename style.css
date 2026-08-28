@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+body{
+    background: lightgreen;
+}
+.quote-box
+{
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    box-sizing: border-box;
+    position: absolute;
+    top:50% ;
+    left:50%;
+    padding: 40px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    background: rgba(23, 124, 229);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.quote-box blockquote{
+    font-size: 20px;
+min-height: 110px;
+}
+.quote-box blockquote::before,
+.quote-box blockquote::after{
+    content: '"';
+  
+
+}
+.quote-box span{
+    display: block;
+  margin-top: 10px;
+    float :right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor:pointer;
+}
+.quote-box img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.quote-box button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
+/* @media (max-width: 600px) {
+    .quote-box {
+        width: 90%;
+        padding: 25px;
+    }
+} */
+ @media (max-width: 600px) 
+ { 
+    body { 
+        padding: 15px; 
+    } 
+    .quote-box { 
+        padding: 30px 20px; 
+    } 
+    .quote-box blockquote {
+         min-height: 100px; 
+        
+    } .quote-box div { 
+    flex-direction: column; 
+    margin-top: 60px;
+     gap: 10px; 
+}
+ .quote-box button { 
+    width: 100%; max-width: 300px; 
+} 
+}
+ /* ========================= SMALL MOBILE ========================= */ 
+ @media (max-width: 400px) { 
+    body { 
+        padding: 10px; 
+    } 
+    .quote-box { 
+        padding: 25px 15px;
+         border-radius: 8px; 
+    } 
+    .quote-box h2 { 
+        font-size: 25px; 
+    } 
+    .quote-box blockquote { 
+        font-size: 17px; 
+        line-height: 1.4; 
+    } .quote-box blockquote::before, 
+    .quote-box blockquote::after { 
+        font-size: 25px; 
+    } 
+    .quote-box span { 
+        font-size: 14px; 
+    } 
+    .quote-box button {
+         height: 45px; 
+         font-size: 14px; 
+        } 
+    }
+
+    /* media query */
