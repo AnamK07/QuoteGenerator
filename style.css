@@ -120,6 +120,7 @@ min-height: 110px;
     flex-direction: column; 
     margin-top: 60px;
      gap: 10px; 
+     align-items: center;
 }
  .quote-box button { 
     width: 100%; max-width: 300px; 
